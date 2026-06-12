@@ -20,6 +20,10 @@ Terminal — kitty + fastfetch with the per-theme agency logo and `capgz@blacksi
 
 ![Terminal](screenshots/terminal.png)
 
+App launcher (rofi) — themed window with solid blue selection tile:
+
+![Rofi](screenshots/rofi.png)
+
 Logout overlay (wlogout) following the theme palette:
 
 ![Wlogout](screenshots/wlogout.png)
