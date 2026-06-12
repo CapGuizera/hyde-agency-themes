@@ -24,6 +24,10 @@ Logout overlay (wlogout) following the theme palette:
 
 ![Wlogout](screenshots/wlogout.png)
 
+SDDM login screen (bonus theme, see [SDDM login theme](#sddm-login-theme-bonus)):
+
+![SDDM](screenshots/sddm-login.png)
+
 ## Wallpaper previews
 
 | Agency | FBI |
@@ -51,6 +55,33 @@ Each theme ships: color palette (`theme.dcol`), wallpapers (seal + watermark var
 Hyprland border colors, waybar, kitty, rofi, kvantum, and an optional hyprlock layout in
 "TOP SECRET // RESTRICTED ACCESS" style (applied when wallbash is in *Theme colors* mode).
 
+## SDDM login theme (bonus)
+
+The `sddm/agency` directory ships a matching SDDM login theme (NSA seal background,
+"TOP SECRET // RESTRICTED ACCESS" header, AGENT ID / ACCESS CODE fields, AUTHENTICATE
+button). It is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+and is visual-only: authentication, keyboard layout and session behavior are untouched.
+
+```bash
+# 1. Copy the theme (requires root)
+sudo cp -r sddm/agency /usr/share/sddm/themes/agency
+
+# 2. Point SDDM to it
+sudo mkdir -p /etc/sddm.conf.d
+printf '[Theme]\nCurrent=agency\n' | sudo tee /etc/sddm.conf.d/99-agency.conf
+```
+
+Tip: preview it without rebooting (opens a window in your session):
+
+```bash
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/agency
+```
+
+If your `/etc/sddm.conf` already has a `[Theme]` section, set `Current=agency` there instead
+(it takes precedence over `sddm.conf.d`). To revert, remove `/etc/sddm.conf.d/99-agency.conf`.
+The change applies on the next boot — do **not** restart the sddm service from inside a
+running session.
+
 ## Notes
 
 - The NSA, FBI and CIA seals are official US government insignia (public domain, sourced
@@ -62,4 +93,5 @@ Hyprland border colors, waybar, kitty, rofi, kvantum, and an optional hyprlock l
 
 ## License
 
-MIT for the theme files. Seal images: public domain (US Gov).
+MIT for the HyDE theme files. Seal images: public domain (US Gov). The SDDM theme keeps the
+license of its base, [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme) (GPL-3.0).
