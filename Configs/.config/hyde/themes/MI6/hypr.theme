@@ -1,7 +1,7 @@
 $HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
 #  Agency — NSA aesthetic (dark navy / surveillance)
 
-$GTK_THEME=Wallbash-Gtk
+$GTK_THEME=Agency
 $ICON_THEME = Tela-circle-blue
 $COLOR_SCHEME = prefer-dark
 

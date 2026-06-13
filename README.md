@@ -59,6 +59,10 @@ Each theme ships: color palette (`theme.dcol`), wallpapers (seal + watermark var
 Hyprland border colors, waybar, kitty, rofi, kvantum, and an optional hyprlock layout in
 "TOP SECRET // RESTRICTED ACCESS" style (applied when wallbash is in *Theme colors* mode).
 
+The `Source/` directory holds the archives the HyDE patcher extracts on install: a
+self-contained `Agency` GTK theme (does not touch HyDE's Wallbash-Gtk) and the
+`Tela-circle-blue` icon set. See [`Source/README.txt`](Source/README.txt) for details.
+
 ## SDDM login theme (bonus)
 
 The `sddm/agency` directory ships a matching SDDM login theme (NSA seal background,
