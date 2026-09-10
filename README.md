@@ -1,7 +1,8 @@
 # Agency Themes — HyDE
 
-A collection of 4 themes for [HyDE](https://github.com/HyDE-Project/HyDE) (Hyprland) with an
-intelligence-agency aesthetic: dark, navy, surveillance. Font: JetBrains Mono Nerd Font.
+A collection of 5 themes for [HyDE](https://github.com/HyDE-Project/HyDE) (Hyprland) with an
+intelligence-agency and special-operations aesthetic: dark, navy, surveillance. Font:
+JetBrains Mono Nerd Font.
 
 | Theme | Aesthetic | Accent |
 |-------|-----------|--------|
@@ -9,6 +10,7 @@ intelligence-agency aesthetic: dark, navy, surveillance. Font: JetBrains Mono Ne
 | **FBI** | dark navy, FBI seal | `#3b82f6` |
 | **CIA** | dark navy, CIA seal | `#3b82f6` |
 | **MI6** | dark teal, typographic | `#2dc9dc` (cyan) |
+| **DEVGRU** | gunmetal black, night vision, military | `#3fe07f` (NVG green) |
 
 ## Screenshots
 
@@ -42,6 +44,10 @@ SDDM login screen (bonus theme, see [SDDM login theme](#sddm-login-theme-bonus))
 |-----|-----|
 | ![CIA](previews/cia.png) | ![MI6](previews/mi6.png) |
 
+| DEVGRU | |
+|--------|--|
+| ![DEVGRU](previews/devgru.png) | |
+
 ## Installation
 
 With HyDE installed, run (one per theme you want):
@@ -51,6 +57,7 @@ hyde-shell theme.patch.sh "Agency" "https://github.com/CapGuizera/hyde-agency-th
 hyde-shell theme.patch.sh "FBI"    "https://github.com/CapGuizera/hyde-agency-themes"
 hyde-shell theme.patch.sh "CIA"    "https://github.com/CapGuizera/hyde-agency-themes"
 hyde-shell theme.patch.sh "MI6"    "https://github.com/CapGuizera/hyde-agency-themes"
+hyde-shell theme.patch.sh "DEVGRU" "https://github.com/CapGuizera/hyde-agency-themes"
 ```
 
 Then pick the theme with `SUPER+SHIFT+T`.
@@ -58,6 +65,13 @@ Then pick the theme with `SUPER+SHIFT+T`.
 Each theme ships: color palette (`theme.dcol`), wallpapers (seal + watermark variant),
 Hyprland border colors, waybar, kitty, rofi, kvantum, and an optional hyprlock layout in
 "TOP SECRET // RESTRICTED ACCESS" style (applied when wallbash is in *Theme colors* mode).
+
+### DEVGRU
+
+Military / special-operations variant: gunmetal black surfaces, night-vision phosphor green
+accent (`#3fe07f`), gold trident and red classification markings. It ships six wallpapers —
+unit seal, SEAL trident, a night-vision scope view, a mission-planning terminal, a redacted
+"TIER ONE" typographic plate and a blackout minimal one.
 
 The `Source/` directory holds the archives the HyDE patcher extracts on install: a
 self-contained `Agency` GTK theme (does not touch HyDE's Wallbash-Gtk) and the
@@ -92,9 +106,10 @@ running session.
 
 ## Notes
 
-- The NSA, FBI and CIA seals are official US government insignia (public domain, sourced
-  from Wikimedia Commons). They are used here decoratively, with no affiliation or
-  endorsement implied.
+- The NSA, FBI and CIA seals, the DEVGRU (Naval Special Warfare Development Group) seal and
+  the Navy SEAL Special Warfare insignia (Trident) are official US government insignia
+  (public domain, sourced from Wikimedia Commons). They are used here decoratively, with no
+  affiliation or endorsement implied.
 - The SIS/MI6 crest is copyrighted; the MI6 theme uses a typographic composition instead.
 - Themes are fully self-contained in the standard HyDE format: switching to other themes
   leaves no residue.

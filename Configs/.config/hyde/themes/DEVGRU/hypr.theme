@@ -1,0 +1,40 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+#  DEVGRU — Naval Special Warfare Development Group (night-vision green / gunmetal)
+
+$GTK_THEME=Agency
+$ICON_THEME = Tela-circle-blue
+$COLOR_SCHEME = prefer-dark
+
+
+general {
+    gaps_in = 3
+    gaps_out = 8
+    border_size = 2
+    col.active_border = rgba(3fe07fff) rgba(0e5230ff) 45deg
+    col.inactive_border = rgba(1c2a24ff)
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(3fe07fff) rgba(0e5230ff) 45deg
+    col.border_inactive = rgba(1c2a24ff)
+    col.border_locked_active = rgba(c9a227ff) rgba(0e5230ff) 45deg
+    col.border_locked_inactive = rgba(1c2a24ff)
+}
+
+decoration {
+    rounding = 10
+    shadow:enabled = false
+
+    blur {
+        enabled = yes
+        size = 6
+        passes = 3
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+}
+
+layerrule = blur,waybar
