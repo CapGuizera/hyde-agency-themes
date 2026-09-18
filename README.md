@@ -10,7 +10,7 @@ JetBrains Mono Nerd Font.
 | **FBI** | dark navy, FBI seal | `#3b82f6` |
 | **CIA** | dark navy, CIA seal | `#3b82f6` |
 | **MI6** | dark teal, typographic | `#2dc9dc` (cyan) |
-| **DEVGRU** | gunmetal black, night vision, military | `#3fe07f` (NVG green) |
+| **DEVGRU** | gunmetal black, military, special operations | `#e8b02e` (amber) |
 
 ## Screenshots
 
@@ -68,10 +68,10 @@ Hyprland border colors, waybar, kitty, rofi, kvantum, and an optional hyprlock l
 
 ### DEVGRU
 
-Military / special-operations variant: gunmetal black surfaces, night-vision phosphor green
-accent (`#3fe07f`), gold trident and red classification markings. It ships six wallpapers —
-unit seal, SEAL trident, a night-vision scope view, a mission-planning terminal, a redacted
-"TIER ONE" typographic plate and a blackout minimal one.
+Military / special-operations variant: gunmetal black surfaces, amber accent (`#e8b02e`,
+the color of the SEAL Trident) and red classification markings. It ships six wallpapers —
+unit seal, SEAL trident, an amber-phosphor night-vision scope view, a mission-planning
+terminal, a redacted "TIER ONE" typographic plate and a blackout minimal one.
 
 The `Source/` directory holds the archives the HyDE patcher extracts on install: a
 self-contained `Agency` GTK theme (does not touch HyDE's Wallbash-Gtk) and the

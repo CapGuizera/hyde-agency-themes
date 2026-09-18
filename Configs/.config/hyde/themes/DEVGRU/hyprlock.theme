@@ -21,11 +21,11 @@ background {
     contrast = 1.05
 }
 
-# GREEN VERTICAL BAR (top-left)
+# AMBER VERTICAL BAR (top-left)
 label {
     monitor =
     text = ▍
-    color = rgba(63, 224, 127, 1.0)
+    color = rgba(232, 176, 46, 1.0)
     font_size = 34
     font_family = $fontFamily
     position = 48, -52
@@ -37,7 +37,7 @@ label {
 label {
     monitor =
     text = TOP SECRET // SAP // NOFORN
-    color = rgba(63, 224, 127, 1.0)
+    color = rgba(232, 176, 46, 1.0)
     font_size = 22
     font_family = $fontFamily Bold
     position = 78, -60
@@ -49,12 +49,12 @@ label {
 label {
     monitor =
     text = $TIME
-    color = rgba(63, 224, 127, 1.0)
+    color = rgba(232, 176, 46, 1.0)
     font_size = 140
     font_family = $fontFamily ExtraBold
     shadow_passes = 3
     shadow_size = 6
-    shadow_color = rgba(63, 224, 127, 0.45)
+    shadow_color = rgba(232, 176, 46, 0.45)
     position = 80, -160
     halign = left
     valign = top
@@ -64,7 +64,7 @@ label {
 label {
     monitor =
     text = cmd[update:60000] $fn_date
-    color = rgba(92, 147, 117, 1.0)
+    color = rgba(147, 134, 95, 1.0)
     font_size = 22
     font_family = $fontFamily
     position = 84, -370
@@ -79,7 +79,7 @@ image {
     size = 420
     rounding = -1
     border_size = 2
-    border_color = rgba(63, 224, 127, 0.55)
+    border_color = rgba(232, 176, 46, 0.55)
     reload_time = 0
     position = -140, 0
     halign = right
@@ -90,7 +90,7 @@ image {
 label {
     monitor =
     text = THE ONLY EASY DAY WAS YESTERDAY
-    color = rgba(56, 125, 88, 1.0)
+    color = rgba(122, 110, 86, 1.0)
     font_size = 15
     font_family = $fontFamily Bold
     position = 84, 288
@@ -102,7 +102,7 @@ label {
 label {
     monitor =
     text =   $USER
-    color = rgba(216, 230, 220, 1.0)
+    color = rgba(237, 227, 206, 1.0)
     font_size = 16
     font_family = $fontFamily Bold
     position = 84, 218
@@ -117,14 +117,14 @@ input-field {
     outline_thickness = 1
     dots_size = 0.25
     dots_spacing = 0.3
-    outer_color = rgba(28, 42, 36, 1.0)
-    inner_color = rgba(13, 21, 18, 0.9)
-    font_color = rgba(216, 230, 220, 1.0)
-    check_color = rgba(201, 162, 39, 1.0)
+    outer_color = rgba(42, 36, 22, 1.0)
+    inner_color = rgba(20, 18, 12, 0.9)
+    font_color = rgba(237, 227, 206, 1.0)
+    check_color = rgba(237, 193, 87, 1.0)
     fail_color = rgba(200, 75, 75, 1.0)
-    placeholder_text = <span foreground="##5c9375">ACCESS CODE</span>
+    placeholder_text = <span foreground="##93865f">ACCESS CODE</span>
     fail_text = <span foreground="##c84b4b">ACCESS DENIED ($ATTEMPTS)</span>
-    capslock_color = rgba(201, 162, 39, 1.0)
+    capslock_color = rgba(237, 193, 87, 1.0)
     font_family = $fontFamily
     position = 84, 140
     halign = left
@@ -135,7 +135,7 @@ input-field {
 shape {
     monitor =
     size = 360, 48
-    color = rgba(63, 224, 127, 1.0)
+    color = rgba(232, 176, 46, 1.0)
     rounding = 8
     position = 84, 72
     halign = left
@@ -144,7 +144,7 @@ shape {
 label {
     monitor =
     text = A U T H E N T I C A T E
-    color = rgba(5, 19, 11, 1.0)
+    color = rgba(21, 15, 3, 1.0)
     font_size = 14
     font_family = $fontFamily Bold
     position = 156, 86
@@ -156,7 +156,7 @@ label {
 label {
     monitor =
     text = Session: Hyprland (uwsm-managed)
-    color = rgba(56, 107, 88, 1.0)
+    color = rgba(102, 92, 70, 1.0)
     font_size = 13
     font_family = $fontFamily
     position = 0, 36
